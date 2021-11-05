@@ -9,9 +9,9 @@ span{
     color: blueviolet;
 }
 #map_canvas {
-    height:50%; 
+    height:500px; 
     margin: 0%;
-    width: 80%;
+    width: 800px;
     margin-top: 50px;
 }
 
