@@ -5,6 +5,20 @@ button.addEventListener('mouseover', e=>{
     button.classList.toggle('green')
 }) 
 
+let request = new XMLHttpRequest();
+request.open("GET","https://api.thingspeak.com/channels/1561045/feeds.json?api_key=KIBFWZ0FG2BLM80I&results=2");
+request.send();
+request.onload = () => {
+  console.log(request);
+  if (request.status == 200) {
+    console.log(JSON.parse(request.response));
+  } else {
+    console.log('error ${request.status} ${request.statusText')
+  }
+}
+
+
+
 let trackerId = 0;
       let geocoder;
       let map;
@@ -65,3 +79,9 @@ let trackerId = 0;
           navigator.geolocation.clearWatch(trackerId);
         }
       };
+      
+      App.accessRule('http://*');
+      App.accessRule('https://*');
+
+    
+      
