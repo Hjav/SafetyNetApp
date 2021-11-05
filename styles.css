@@ -1,14 +1,54 @@
 body {
-    background-color: red;
+    background-color: #767579 !important;
+    margin:0px; 
+    padding:0px 
 }
 
+span{
+    font-family: 'Arial';
+    color: blueviolet;
+}
 #map_canvas {
     height:50%; 
-    margin: 0 auto;
+    margin: 0% auto;
     width: 80%;
     margin-top: 50px;
 }
 
+#OD_alert_box {
+    height:30%; 
+    margin: 25% auto;
+    width: 15%;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    top:100%;
+}
+
+#driverRating {
+    height:30%; 
+    margin: 25% auto;
+    width: 15%;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    top:100%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+
+.right {
+    margin: auto;
+    margin-left: 10px; 
+    margin-right: 0;
+   /* border: 3px solid green; */
+    padding: 10px;
+}
 
 .buttonToggle {
     height: 200px;
@@ -17,4 +57,26 @@ body {
 
 .green {
     color: green;
+}
+
+.navbar{
+    background: rgb(68, 68, 67) ;
+    padding: 1em; 
+    display: none;
+    
+}
+.logo { 
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(1, 1, 14);
+    font-size: 1.2em;
+    font-family:'Arial';
+}
+span {
+    color:rgb(241, 236, 245);
+    font-family: 'Arial';
+}
+
+.col1 {
+    border: 3px solid green;
 }
